@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="with=device-width, initial-scale-1">
+        <title>164matsubara portfolio</title>
+        <!-- Load Boot strap -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Load jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('a[href^=#]').click(function(){
+                    var speed = 500;
+                    var href= $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top;
+                    $("html, body").animate({scrollTop:position}, speed, "swing");
+                    return false;
+                });
+                });
+        </script>
+        <!-- Load Boot strap js-->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <style>
+        body {
+            margin: 0 0 0 20px;
+            font-family: "游ゴシック";
+            font-size: 12px;
+            background-color: white;
+        }
+        
+        
+        .flag img{
+                display: inline-block;
+                max-height: 60px;
+                max-width: 60px;
+                margin: 5px;
+            }
+            
+            .star img {
+                max-width: 60px;
+                margin: 5px;
+            }
+            
+            .skill.icon img {
+                max-height: 60px;
+                max-width: 60px;
+                margin: 10px 12px 5px 13px;
+            }
+            
+            .panel {
+                margin: 10px 50px;
+            }
+            
+            .package img {
+                 display: block;
+            }
+            
+            .works img {
+                max-height: 200px;
+                max-width: 200px;
+                margin: 20px 10px 20px 50px;
+            }
+            
+            .works {
+                display: inline-block;
+            }
+            
+            footer {
+                background-color: #ddd;
+                padding: 20px 0;
+                margin: 60px 0 20px 0;
+                text-align: center;
+            }
+            
+            .worklist {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarExample1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">164 matsubara portfolio</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarExample1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about me">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <p id="about me">About me</p>
+        <p class="Explanation">
+        1983年　生まれ　茨城県出身<br />
+        2004年　大連理工大学留学<br />
+        2007年　富山大学人文学部卒業<br />
+        2015年　機械メーカーの海外部門勤務<br />
+        </p>
+        <p id="skills">Skills</p>
+        <div class="panel panel-info"> 
+            <div class="panel-heading">
+                language
+            </div>
+            <div class="panel-body">
+                <div class="flag">
+                    <div class="package">
+                        <img src="JAPAN.png" alt="" />
+                        <img src="5 STAR.png" alt="" />
+                    </div>
+                    <div class="package">
+                        <img src="USA.png" alt="" />
+                        <img src="3 STAR.png" alt="" />
+                    </div>
+                    <div class="package">
+                        <img src="CHINA.png" alt="" />
+                        <img src="3.5 STAR.png" alt="" />
+                    </div>    
+                </div>
+            </div>
+            <div class="panel-footer">
+            </div>
+        </div>
+           
+            
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                technorogy
+            </div>
+            <div class="panel-body">
+                <div class="skill icon">
+                    <img src="CSS3.png" alt="" />
+                    <img src="HTML5.png" alt="" />
+                    <img src="RUBY.png" alt="" />
+                    <img src="RAILS.png" alt="" />
+                </div>
+                <div class="star">
+                    <img src="1 STAR.png" alt="" />
+                    <img src="1 STAR.png" alt="" />
+                    <img src="1 STAR.png" alt="" />
+                    <img src="1 STAR.png" alt="" />
+                </div>
+            </div>
+            <div class="panel-footer">
+            </div>
+        </div>
+        <p id="portfolio">Portfolio</p>
+            <div class="worklist">
+                <div class="works">
+                    <a href="#"><img SRC="10MASSAGE.png" alt="" /></a>
+                    <span>掲示板</span><br />
+                </div>
+                <div class="works">
+                    <a href="#"><img SRC="10MICROPOST.png" alt="" /></a>
+                    <span>Twitterクローンアプリ</span><br />
+                </div>
+                <div class="works">
+                    <a href="#"><img SRC="10MONO.png" alt="" /></a>
+                    <span>AMAZON APIを利用したモノリスト</span><br />
+                </div>
+                <div class="works">
+                    <a href="https://github.com/164matsubara" target=" blank">
+                        <img SRC="10GIT.png" alt="" />
+                    </a>
+                    <span>Github</span><br />
+                </div>
+            </div>
+        <p id="contact">Contact</p>
+        <button type="button" class="btn btn-info">skype</button>
+        <a href="https://plus.google.com/101124454216401469197/posts" target="blank"><button type="button" class="btn btn-danger">Google+</button></a>
+        <button type="button" class="btn btn-primary">facebook</button>
+    <footer>
+        <p>&copy 2015 164matsubara</p>
+    </footer>
+    
